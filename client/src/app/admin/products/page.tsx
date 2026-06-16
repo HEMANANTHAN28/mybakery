@@ -42,7 +42,7 @@ export default function AdminProductsPage() {
   const fetchProducts = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/api/products');
+      const res = await fetch('https://bakery-backend.onrender.com///api/products');
       if (res.ok) {
         const data = await res.json();
         setProducts(data);
@@ -123,7 +123,7 @@ export default function AdminProductsPage() {
     if (!confirm('Are you sure you want to remove this pastry from the catalog?')) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/products/${id}`, {
+      const res = await fetch(`https://bakery-backend.onrender.com/api/products/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${user?.token}`,
@@ -176,8 +176,8 @@ export default function AdminProductsPage() {
 
     try {
       const url = editingId
-        ? `http://localhost:5000/api/products/${editingId}`
-        : 'http://localhost:5000/api/products';
+        ? `http://https://bakery-backend.onrender.com/api/products/${editingId}`
+        : 'http://https://bakery-backend.onrender.com/api/products';
       const method = editingId ? 'PUT' : 'POST';
 
       const res = await fetch(url, {

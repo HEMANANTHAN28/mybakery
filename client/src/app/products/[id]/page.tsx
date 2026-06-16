@@ -29,7 +29,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/products/${id}`);
+        const res = await fetch(`https://bakery-backend.onrender.com/api/products/${id}`);
         if (res.ok) {
           const data = await res.json();
           setProduct(data);

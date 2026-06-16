@@ -43,7 +43,7 @@ function ProductsListContent() {
     const fetchProducts = async () => {
       setLoading(true);
       try {
-        let url = 'http://localhost:5000/api/products';
+        let url = 'https://bakery-backend.onrender.com/api/products';
         const params = new URLSearchParams();
         
         if (selectedCategory !== 'All') {
