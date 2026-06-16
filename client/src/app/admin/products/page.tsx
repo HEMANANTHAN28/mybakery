@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '../../context/AuthContext.js';
+import { useAuth } from '../../../context/AuthContext';
 import { Plus, Edit2, Trash2, X, ChevronLeft, ShieldCheck, Save, AlertCircle } from 'lucide-react';
 
 interface Product {
