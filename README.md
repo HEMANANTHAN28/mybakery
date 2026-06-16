@@ -51,7 +51,7 @@ Ensure that your local MongoDB database is running on the default port: `mongodb
    ```bash
    npm run dev
    ```
-   *The server runs on `http://localhost:5000`. Upon launching for the first time, it will automatically connect to MongoDB and seed default products and user accounts.*
+   *The server runs on `https://mybakery.onrender.com`. Upon launching for the first time, it will automatically connect to MongoDB and seed default products and user accounts.*
 
 ---
 

@@ -61,7 +61,7 @@ export default function CheckoutPage() {
         price: item.price,
       }));
 
-      const res = await fetch('http://https://bakery-backend.onrender.com/api/orders', {
+      const res = await fetch('https://mybakery.onrender.com/api/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

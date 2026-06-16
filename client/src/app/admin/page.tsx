@@ -32,10 +32,10 @@ export default function AdminDashboardPage() {
       try {
         // Fetch products & orders list to aggregate stats
         const [ordersRes, productsRes] = await Promise.all([
-          fetch('http://localhost:5000/api/orders', {
+          fetch('https://mybakery.onrender.com/api/orders', {
             headers: { Authorization: `Bearer ${user.token}` },
           }),
-          fetch('http://localhost:5000/api/products'),
+          fetch('https://mybakery.onrender.com/api/products'),
         ]);
 
         if (ordersRes.ok && productsRes.ok) {

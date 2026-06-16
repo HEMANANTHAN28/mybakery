@@ -28,7 +28,7 @@ export default function HomePage() {
   useEffect(() => {
     const fetchFeatured = async () => {
       try {
-        const res = await fetch('https://bakery-backend.onrender.com/api/products?featured=true');
+        const res = await fetch('https://mybakery.onrender.com/api/products?featured=true');
         if (res.ok) {
           const data = await res.json();
           setFeaturedProducts(data.slice(0, 4));
